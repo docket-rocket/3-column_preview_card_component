@@ -1,0 +1,119 @@
+/* primary color */
+:root{
+--brightorange: hsl(31, 77%, 52%);
+--Darkcyan: hsl(184, 100%, 22%);
+--Verydarkcyan: hsl(179, 100%, 13%);
+--verylightgrey:hsl(0, 0%, 95%);
+--para: hsla(0, 0%, 100%, 0.75);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    /* border-radius: 1rem; */
+    height: 100vh;
+    width: 100%;
+    /* border:1px solid; */
+    background-color: var(--verylightgrey);
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(420px,420px));
+    grid-template-columns:repeat(auto-fit,minmax(300px,300px));
+    grid-auto-flow: row;
+    grid-auto-rows: 420px;
+    grid-auto-columns: 300px;
+    justify-content: center;
+    align-content: center;
+}
+
+.item1,.item2,.item3 {
+    /* border: 1px solid; */
+    position: relative;
+    font-size: 1.5rem;
+    /* height: 300px; */
+    /* width: 210px; */
+    padding: 3rem;
+}
+.item1 {
+    background-color: var(--brightorange);
+}
+.item2 {
+    background-color: var(--Darkcyan);
+}
+.item3 {
+    background-color: var(--Verydarkcyan);
+}
+.btn-orange {
+    color: var(--brightorange);
+    background-color: var(--verylightgrey);
+    border-radius: 2rem;
+}
+.btn-orange:hover{
+    color:  var(--verylightgrey) ;
+    background-color: var(--brightorange);
+}
+.btn-cyan {
+    color: var(--Darkcyan);
+    background-color: var(--verylightgrey);
+}
+.btn-cyan:hover {
+    color: var(--verylightgrey);
+    background-color: var(--Darkcyan);
+}
+.btn-darkcyan {
+    color: var(--Verydarkcyan);
+    background-color: var(--verylightgrey);
+}
+.btn-darkcyan:hover {
+    color: var(--verylightgrey);
+    background-color: var(--Verydarkcyan);
+}
+:link,:active{
+    text-decoration: none;
+}
+img{
+    height: 3.5rem;
+    width: 5.5rem;
+    transition: all 1s;
+}
+img:hover{
+    transform: translateX(10rem);    
+}
+.heading {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    padding: 2rem 0;
+    font-size: 3rem;
+    color: var(--verylightgrey)
+}
+.pragraph {
+    font-family: 'Lexend Deca', sans-serif;
+    font: 400;
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color:var(--para);
+     height: 55%;
+}
+
+.btn{
+    position: absolute;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border:2px solid;
+    bottom: 2rem;
+    border-radius: 2rem;
+    transition: all 1s;    
+}
+
+@media screen and (max-width:377px) {
+    .container{
+        height: 100%;
+        padding: 3rem 2rem;
+    }
+}
+
