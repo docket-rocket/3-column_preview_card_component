@@ -114,7 +114,7 @@ img:hover{
     outline: none;   
 }
 
-@media screen and (max-width:377px) {
+@media screen and (max-width:900px) {
     .container{
         height: 100%;
         padding: 3rem 2rem;
